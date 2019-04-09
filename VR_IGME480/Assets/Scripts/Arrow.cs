@@ -9,18 +9,40 @@ public class Arrow : MonoBehaviour
 
     public SteamVR_Action_Boolean m_SingleAction;
 
+    bool isAttached = false;
+
+    private bool isFired = false;
+
+    private void OnTriggerStay(Collider other)
+    {
+        AttachArrow();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        ArrowManager.Instance.AttachBowToArrow();
         AttachArrow();
+    }
+
+    private void Update()
+    {
+        if (isFired)
+        {
+            transform.LookAt(transform.position + transform.GetComponent<Rigidbody>().velocity);
+        }
+    }
+
+    public void Fired()
+    {
+        isFired = true;
     }
 
     private void AttachArrow()
     {
-        m_SingleAction = SteamVR_Actions._default.GrabPinch;
-        m_SingleAction.GetStateDown(SteamVR_Input_Sources.Any);
-
-        //SteamVR_Actions._default.Squeeze.Get
+        /*
+        if(!isAttached && input code){
+            Arrow.Instance.AttachBowToArrow();
+            isAttached = true;
+        }
+        */
     }
 }
