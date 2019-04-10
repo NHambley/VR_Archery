@@ -8,6 +8,7 @@ ModelImporter:
     400000: //RootNode
     400002: BubingaTree_mesh
     2100000: BubingaTree_mat
+    2100002: BubingaTree_meshMat
     2300000: BubingaTree_mesh
     3300000: BubingaTree_mesh
     4300000: BubingaTree_mesh
