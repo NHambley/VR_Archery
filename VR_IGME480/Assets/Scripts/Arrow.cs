@@ -17,17 +17,17 @@ Thumbstick	Press	Left: 8
 Thumbstick	Horizontal Movement	-	Left: 1
                                     Right: 4	Axis values –1.0 to 1.0
 Thumbstick	Vertical Movement	-	Left: 2
-                                    Right: 5	–1.0 to 1.0
+                                    Right: 5	Axis values –1.0 to 1.0
 Select Trigger	Press	Left: 14
-Right: 15	-	-
+                        Right: 15	-	-
 Select Trigger	Squeeze	-	Left: 9
-Right: 10	0.0 to 1.0
+                            Right: 10	Axis values 0.0 to 1.0
 Grip button	Press	Left: 4
-Right: 5	-	-
+                    Right: 5	-	-
 Grip button	Squeeze	-	Left: 11
-Right: 12	0.0 and 1.0*
+                        Right: 12	0.0 and 1.0*
 Menu button	Press	Left: 6
-Right: 7	-	- 
+                    Right: 7	-	- 
 */
 public class Arrow : MonoBehaviour
 {
@@ -65,11 +65,12 @@ public class Arrow : MonoBehaviour
     private void AttachArrow()
     {
         // check light diver rework for input help
-        /*
-        if(!isAttached && input code){
-            Arrow.Instance.AttachBowToArrow();
+        
+        if(!isAttached && Input.GetKeyDown(KeyCode.Joystick1Button15))
+        {
+            ArrowManager.Instance.AttachBowToArrow();
             isAttached = true;
         }
-        */
+        
     }
 }

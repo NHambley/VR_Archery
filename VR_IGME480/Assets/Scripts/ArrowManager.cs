@@ -55,11 +55,12 @@ public class ArrowManager : MonoBehaviour
             float dist = (stringStartPoint.transform.position - trackedObj.transform.position).magnitude;
             stringAttachPoint.transform.localPosition = stringStartPoint.transform.localPosition + new Vector3(5f * dist, 0f, 0f);
 
-            /*
-            if(trigger release){
+            
+            if(Input.GetKeyUp(KeyCode.Joystick1Button15))
+            {
                 Fire();    
             }
-            */
+            
         }
     }
 
