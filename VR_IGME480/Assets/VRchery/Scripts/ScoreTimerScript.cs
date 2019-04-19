@@ -9,7 +9,7 @@ public class ScoreTimerScript : MonoBehaviour
     private int score;
     private int highScore;
     private bool scoreChanged;
-    private GameObject HUD;
+    private GameObject SCORE;
     private GameObject TIME;
     private Text timeText;
     private Text scoreText;
@@ -22,8 +22,8 @@ public class ScoreTimerScript : MonoBehaviour
         score = 0;
         scoreChanged = false;
         highScore = GetHighScore();
-        HUD = GameObject.FindGameObjectWithTag("HUD");
-        scoreText = HUD.GetComponent<Text>();
+        SCORE = GameObject.FindGameObjectWithTag("SCORE");
+        scoreText = SCORE.GetComponent<Text>();
         TIME = GameObject.FindGameObjectWithTag("TIME");
         timeText = TIME.GetComponent<Text>();
     }
@@ -54,7 +54,7 @@ public class ScoreTimerScript : MonoBehaviour
         if(timeLeft < 0)
         {
             SaveScore();
-            SceneManager.LoadScene("GameOverScene");
+            //load new scene/gameover whatever you want
         }
         //score
         if (scoreChanged)
