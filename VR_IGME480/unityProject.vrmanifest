@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.vr_igme480.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "Z:\\IGMProfile\\Documents\\GitHub\\VR_Archery\\VR_IGME480\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "VR_IGME480 [Testing]"
+        }
+      }
+    }
+  ]
+}

@@ -29,7 +29,7 @@ namespace Valve.VR.InteractionSystem
 
 		private bool allowArrowSpawn = true;
 		private bool nocked;
-        private GrabTypes nockedWithType = GrabTypes.None;
+        private GrabTypes nockedWithType = GrabTypes.None;   
 
 		private bool inNockRange = false;
 		private bool arrowLerpComplete = false;

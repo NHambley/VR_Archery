@@ -9,8 +9,7 @@ public class Arrow : MonoBehaviour
 
     private void Start()
     {
-        manager = GameObject.Find("Manager").GetComponent<ScoreTimerScript>();
-        manager.AddScore(10);
+        manager = GameObject.Find("Manager").GetComponent<ScoreTimerScript>();  
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -20,6 +19,7 @@ public class Arrow : MonoBehaviour
         {
             rb.isKinematic = true;
             transform.parent = collision.transform;
+            manager.AddScore(10);
         }
     }
 }
