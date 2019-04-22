@@ -1,0 +1,9 @@
+Milestone 3
+
+Drawing is very smooth
+increase draw weight
+Maybe change the 'star' light pattern after launching arrow
+Bow is sometimes hard to pick up at first
+Need to make controls more intuitive
+Flaming arrow, please
+Get ui moved to a more 'pleasing looking' object. Non-floating
