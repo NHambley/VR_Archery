@@ -27,8 +27,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.25
-  m_Center: {x: -0.465, y: 1.925, z: 0.36}
+  m_Radius: 0.23
+  m_Center: {x: -0.465, y: 1.94, z: 0.36}
 --- !u!65 &3617782820957061371
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40,8 +40,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.22412539, y: 0.64724463, z: 0.661802}
-  m_Center: {x: -0.4230684, y: 1.3686258, z: 0.36397487}
+  m_Size: {x: 0.2241254, y: 0.6498533, z: 0.64887315}
+  m_Center: {x: -0.4230684, y: 1.3491998, z: 0.3636137}
 --- !u!65 &5036424610082813724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53,8 +53,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.30444044, y: 0.23510116, z: 1.9687316}
-  m_Center: {x: -0.45000002, y: 1.5274028, z: 0.34430844}
+  m_Size: {x: 0.14394882, y: 0.14119594, z: 1.9645271}
+  m_Center: {x: -0.44209412, y: 1.5570549, z: 0.37305057}
 --- !u!59 &7410343086260466679
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -151,15 +151,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400076, guid: 7bbf817ba818b9c478cd792409c45a57, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.35
+      value: 0.59003204
       objectReference: {fileID: 0}
     - target: {fileID: 400076, guid: 7bbf817ba818b9c478cd792409c45a57, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.35
+      value: 0.59003204
       objectReference: {fileID: 0}
     - target: {fileID: 400076, guid: 7bbf817ba818b9c478cd792409c45a57, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.35
+      value: 0.59003204
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bbf817ba818b9c478cd792409c45a57, type: 3}
