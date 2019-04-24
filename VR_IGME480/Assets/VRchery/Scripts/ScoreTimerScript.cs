@@ -59,7 +59,7 @@ public class ScoreTimerScript : MonoBehaviour
         //score
         if (scoreChanged)
         {
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Score:\n " + score;
             scoreChanged = false;
         }
     }
