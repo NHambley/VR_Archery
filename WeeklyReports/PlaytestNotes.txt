@@ -1,0 +1,4 @@
+Bow drawing is very smooth and well done
+Need to add a popup telling the player how to play the game
+The targets reacting to getting hit is nice
+The moving targets are nice
