@@ -8,6 +8,11 @@ ModelImporter:
     400000: default
     400002: //RootNode
     2100000: defaultMat
+    2100002: mat23
+    2100004: mat21
+    2100006: mat5
+    2100008: mat8
+    2100010: mat12
     2300000: default
     3300000: default
     4300000: default
