@@ -9,6 +9,7 @@ TagManager:
   - SCORE
   - TIME
   - Target
+  - HIGHSCORE
   layers:
   - Default
   - TransparentFX
