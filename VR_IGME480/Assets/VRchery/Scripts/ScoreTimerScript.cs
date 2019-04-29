@@ -26,6 +26,7 @@ public class ScoreTimerScript : MonoBehaviour
         scoreText = SCORE.GetComponent<Text>();
         TIME = GameObject.FindGameObjectWithTag("TIME");
         timeText = TIME.GetComponent<Text>();
+
     }
 
     void Update()
@@ -55,6 +56,7 @@ public class ScoreTimerScript : MonoBehaviour
         {
             SaveScore();
             //load new scene/gameover whatever you want
+            SceneManager.LoadScene("GameOver");
         }
         //score
         if (scoreChanged)
