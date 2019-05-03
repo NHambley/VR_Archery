@@ -17,11 +17,14 @@ public class PopUpTarget : MonoBehaviour
     public Transform hiddenPos;// where the target hides
     Transform destination;// which transform is the target heading towards
 
+    AudioSource whoosh;
+
     // Start is called before the first frame update
     void Start()
     {
         position = transform.position;
         timer = timerH;
+        whoosh = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -54,6 +57,7 @@ public class PopUpTarget : MonoBehaviour
         }
         else if(moving)
         {
+            whoosh.Play();
             Move();
         }
     }

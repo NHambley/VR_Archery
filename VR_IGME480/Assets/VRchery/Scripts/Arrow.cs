@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class Arrow : MonoBehaviour
 {
     ScoreTimerScript manager;
+    AudioSource hit;
 
     private void Start()
     {
-        manager = GameObject.Find("Manager").GetComponent<ScoreTimerScript>();  
+        manager = GameObject.Find("Manager").GetComponent<ScoreTimerScript>();
+        hit = GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -20,6 +22,7 @@ public class Arrow : MonoBehaviour
             rb.isKinematic = true;
             transform.parent = collision.transform;
             manager.AddScore(10);
+            hit.Play();
         }
     }
 }
