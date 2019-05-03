@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/VRchery/Scenes/GameOver.unity
+    guid: eb356663418096445aceb16c0fd9e27a
+  - enabled: 1
+    path: Assets/VRchery/Scenes/Archery Range.unity
+    guid: c9d1920e1169d314eb958ddc5d87d671
+  - enabled: 1
+    path: Assets/VRchery/Scenes/MainMenu.unity
+    guid: 44b51272e48641d4a9b1e6ad0e8d6ed5
   m_configObjects: {}
